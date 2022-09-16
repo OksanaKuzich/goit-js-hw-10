@@ -18,3 +18,20 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+.card {
+  padding-top: 15px;
+  border: 1px #212121 solid;
+  width: 40%;
+  background-color:beige;
+  text-align: center;
+}
+
+.flag {
+}
+
+.name {
+}
+
+.info {
+}
