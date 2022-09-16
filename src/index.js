@@ -40,16 +40,16 @@ function onInputChange(event) {
 function markUpItems(item) {
   return item
     .map(({ flags, name }) => {
-      return `<li><img src="${flags.svg}" alt="${name.official}" width=100px><p>${name.official}</p></li>`;
+      return `<li class='list'><img class='flag' src="${flags.svg}" alt="${name.official}" width=70px><p>${name.official}</p></li>`;
     })
     .join('');
 }
 
 function markUpCard(item) {
-  infoEl.innerHTML = `<div class='card'><img class='flag' src="${item.flags.svg}" alt="${
+  infoEl.innerHTML = `<div class='card'><img src="${item.flags.svg}" alt="${
     item.name.official
   }" width=300px><h2 class='name'>Назва країни: ${item.name.official}</h2>
-      <p class='info'>Столиця: ${item.capital}</p>
-      <p class='info'>Населення: ${(Math.round(item.population / 10_000)) / 100} млн чол.</p>
-      <p class='info'>Мова: ${Object.values(item.languages)}</p><div>`;
+      <p>Столиця: ${item.capital}</p>
+      <p>Населення: ${(Math.round(item.population / 10_000)) / 100} млн чол.</p>
+      <p>Мова: ${Object.values(item.languages)}</p><div>`;
 }

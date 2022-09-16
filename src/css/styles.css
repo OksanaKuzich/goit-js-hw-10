@@ -22,7 +22,20 @@ body {
 .card {
   padding-top: 15px;
   border: 1px #212121 solid;
-  width: 40%;
+  width: 330px;
   background-color: beige;
   text-align: center;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+}
+
+.flag {
+  margin-right: 15px;
+}
+
+input {
+  width: 330px;
 }
